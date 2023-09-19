@@ -12,5 +12,11 @@ Topic Covered:
 
  
 ## Q No2: Find the offset address where Physical address is 4A37Bh and the segment address is 40FFh 
- Solution in EX02.ASM
+Physical address = 4A37Bh
+Segment address = 40FFh 
+4A37Bh  = (40FFh *10) +offset
+4A37Bh  = 40FF0h  +offset
 
+Offset Address = (40FFh << 4) + 4A37Bh
+Offset address = 4A37Bh - 40FF0h
+ Offset address= 938Bh
